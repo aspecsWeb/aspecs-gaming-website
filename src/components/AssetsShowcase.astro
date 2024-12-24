@@ -27,16 +27,17 @@ interface Asset {
 const assets: Asset[] = await fetchAssets();
 ---
 
-<Container>
+<Container size="xl">
   <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     {assets.map(asset => (
       asset.published && (
-        <article class="p-4 border rounded-lg shadow-md">
-          <h2 class="text-2xl font-semibold mb-2">{asset.title}</h2>
-          <img src={asset.cover_url} alt={`Cover for ${asset.title}`} class="mb-2"/>
-          <p class="text-base">{asset.short_text}</p>
-          <a href={asset.url} class="text-blue-500 underline">View Asset</a>
-        </article>
+        <a href={asset.url} class="block p-4 border rounded-lg shadow-md no-underline">
+          <article>
+            <h2 class="text-2xl font-semibold mb-2">{asset.title}</h2>
+            <img src={asset.cover_url} alt={`Cover for ${asset.title}`} class="mb-2 object-cover rounded-lg"/>
+            <p class="text-base">{asset.short_text}</p>
+          </article>
+        </a>
       )
     ))}
   </main>
