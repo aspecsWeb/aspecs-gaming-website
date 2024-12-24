@@ -1,0 +1,40 @@
+---
+import Container from '../../layouts/Container.astro';
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout>
+  <Container size="sm">
+    <div class="flex flex-col items-center justify-center min-h-screen py-12">
+      <h1 class="text-4xl font-bold mb-4">Imprint</h1>
+      <div class="w-full max-w-4xl space-y-4">
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">Company Information</h2>
+            <ul class="list-disc list-inside text-base">
+            <li>Company Name: Aspecs Collective</li>
+            <li>Location: 9470 Buchs, Switzerland</li>
+            <li>Founded Year: 2023</li>
+            </ul>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">Contact Information</h2>
+          <p class="text-base">Email: info@aspecs.ch</p>
+          <p class="text-base">Phone: +41 78 241 28 12</p>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">Legal Notice</h2>
+          <p class="text-base">This website is operated by Aspecs Gaming. All content provided on this website is for informational purposes only. Aspecs Gaming makes no representations as to the accuracy or completeness of any information on this site or found by following any link on this site. Aspecs Gaming will not be liable for any errors or omissions in this information nor for the availability of this information. Aspecs Gaming will not be liable for any losses, injuries, or damages from the display or use of this information.</p>
+        </div>
+        <h2 class="text-2xl font-semibold mb-2">Privacy Policy</h2>
+        <p class="text-base">We do not collect or store any personal data from our users. Any information provided to us is used solely for the purpose of responding to inquiries and providing support.</p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Cookie Policy</h2>
+        <p class="text-base">Our website uses cookies to enhance your browsing experience. These cookies do not store any personal information and are used only to improve the functionality of the site.</p>
+      </div>
+      </div>
+    </div>
+  </Container>
+  <Footer />
+</Layout>
