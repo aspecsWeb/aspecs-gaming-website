@@ -1,5 +1,34 @@
 ---
-
+import Title from "../../components/Title.astro";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
 ---
 
-<h1>Socials</h1>
+<Layout>
+  <Container size="sm">
+    <Title title="Aspecs Socials" />
+
+
+
+    <style>
+      .socials {
+        margin-top: 20px;
+      }
+      .socials-list {
+        list-style: none;
+        padding: 0;
+      }
+      .socials-item {
+        margin: 10px 0;
+      }
+      .socials-link {
+        text-decoration: none;
+        color: #0073e6;
+        font-weight: bold;
+      }
+      .socials-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </Container>
+</Layout>

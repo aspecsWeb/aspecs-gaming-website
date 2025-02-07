@@ -1,66 +1,70 @@
 ---
+import Title from "../../components/Title.astro";
 import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
 ---
 
-<Container size="sm">
-  <h1 class="text-6xl font-bold mb-16">Privacy Policy</h1>
-  <p class="text-lg">
-    At Aspecs Gaming, we take your privacy seriously. This policy outlines our
-    practices regarding data collection and use.
-  </p>
-
-  <div>
-    <h2 class="text-2xl font-semibold mt-8 mb-4">Data Collection</h2>
-    <p>
-      We do not collect personal data from our users. Our service is designed to
-      respect your privacy.
+<Layout>
+  <Container size="sm">
+    <Title title="Privacy Policy" />
+    <p class="text-lg">
+      At Aspecs Gaming, we take your privacy seriously. This policy outlines our
+      practices regarding data collection and use.
     </p>
-  </div>
 
-  <div>
-    <h2 class="text-2xl font-semibold mt-8 mb-4">Cookies</h2>
-    <p>
-      We use cookies to enhance user experience. These cookies are essential for
-      the proper functioning of our website and do not store any personal
-      information.
-    </p>
-  </div>
+    <div>
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Data Collection</h2>
+      <p>
+        We do not collect personal data from our users. Our service is designed
+        to respect your privacy.
+      </p>
+    </div>
 
-  <div>
-    <h2 class="text-2xl font-semibold mt-8 mb-4">Analytics</h2>
-    <p>
-      We use Google Analytics to understand how our site is used. This service
-      may collect anonymous data about your visit, such as the pages you view
-      and the time spent on our site.
-    </p>
-  </div>
+    <div>
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Cookies</h2>
+      <p>
+        We use cookies to enhance user experience. These cookies are essential
+        for the proper functioning of our website and do not store any personal
+        information.
+      </p>
+    </div>
 
-  <div>
-    <h2 class="text-2xl font-semibold mt-8 mb-4">Third-Party Services</h2>
-    <p>
-      Our site may contain links to third-party websites. We are not responsible
-      for the privacy practices or content of these sites.
-    </p>
-  </div>
+    <div>
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Analytics</h2>
+      <p>
+        We use Google Analytics to understand how our site is used. This service
+        may collect anonymous data about your visit, such as the pages you view
+        and the time spent on our site.
+      </p>
+    </div>
 
-  <div>
-    <h2 class="text-2xl font-semibold mt-8 mb-4">Changes to This Policy</h2>
-    <p>
-      We may update this privacy policy from time to time. We encourage you to
-      review this page periodically for any changes.
-    </p>
-  </div>
+    <div>
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Third-Party Services</h2>
+      <p>
+        Our site may contain links to third-party websites. We are not
+        responsible for the privacy practices or content of these sites.
+      </p>
+    </div>
 
-  <div>
-    <h2 class="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
-    <p>
-      If you have any questions about our privacy policy, please contact us at{
-        " "
-      }
-      <a href="mailto:info@aspecs.ch" class="text-primary hover:underline">
-        info@aspecs.ch
-      </a>
-      .
-    </p>
-  </div>
-</Container>
+    <div>
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Changes to This Policy</h2>
+      <p>
+        We may update this privacy policy from time to time. We encourage you to
+        review this page periodically for any changes.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
+      <p>
+        If you have any questions about our privacy policy, please contact us at{
+          " "
+        }
+        <a href="mailto:info@aspecs.ch" class="text-primary hover:underline">
+          info@aspecs.ch
+        </a>
+        .
+      </p>
+    </div>
+  </Container>
+</Layout>

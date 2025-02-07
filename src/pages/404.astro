@@ -1,6 +1,13 @@
 ---
-
+import Title from "../components/Title.astro";
+import Container from "../layouts/Container.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<h1>404</h1>
-<p>Page not found</p>
+<Layout>
+  <Container size="xl">
+    <Title title="About" />
+    <h1>404</h1>
+    <p>Page not Found</p>
+  </Container>
+</Layout>
