@@ -1,48 +1,75 @@
-# Astro Starter Kit: Basics
+# Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Table of Contents
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+1. [Description](#description)
+2. [Team](#team)
+3. [Technologies Used](#technologies-used)
+4. [Hosting & Deployment](#hosting--deployment)
+5. [Expenses & Budget](#expenses--budget)
+6. [Installation & Setup](#installation--setup)
+7. [License](#license)
+8. [Contact](#contact)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Description
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+The official website of gaming department of Aspecs.
 
-## 🚀 Project Structure
+## Team
 
-Inside of your Astro project, you'll see the following folders and files:
+- **[Paul Pietzko]** - Project Manager, Frontend Developer, Backend Developer
+- (Add more as needed)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Technologies Used
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Used Technologies, Frameworks, and Tools used in the project:
 
-## 🧞 Commands
+### Dashboard
+- [Git](https://github.com/aspecsWeb/aspecs-gaming-website)
+- Programming Languages: TypeScript
+- Frameworks: AstroJS, Tailwind, DaisyUI
+- Database: -
+- APIs: itch.io
 
-All commands are run from the root of the project, from a terminal:
+## Hosting & Deployment
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- **Hosting Provider**: Vercel
+- **Domain Name**: gaming.aspecs.ch
+- **Deployment Process**: CI/CD pipelines on main branch
 
-## 👀 Want to learn more?
+## Expenses & Budget
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Associated costs for running the project:
+
+- **Domain**: $5 per year per domain
+- **Hosting**: $20
+- **APIs & Services**: -
+- **Other Costs**: -
+
+## Installation & Setup
+
+Provide steps for setting up the project locally:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/aspecsWeb/aspecs-gaming-website.git
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+## License
+
+This project is licensed under the [Proprietary License](LICENSE). All rights reserved. Unauthorized copying, distribution, or modification of this project, via any medium, is strictly prohibited.
+
+## Contact
+
+Provide contact details for support or inquiries:
+
+- Email: [paul.pietzko@icloud.com](mailto:paul.pietzko@icloud.com)
+- Twitter: @paulpietzko
