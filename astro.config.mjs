@@ -1,9 +1,12 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
+import tailwindcss from '@tailwindcss/vite';
 
-import tailwind from '@astrojs/tailwind';
-
-// https://astro.build/config
+import sitemap from "@astrojs/sitemap";
 export default defineConfig({
-  integrations: [tailwind()]
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  // Add your domain here
+   site: 'https://lexingtonthemes.com',
+  integrations: [ sitemap()]
 });

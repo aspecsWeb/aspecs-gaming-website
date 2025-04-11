@@ -1,86 +1,59 @@
 ---
-const year = new Date().getFullYear();
-const domain = "https://www.aspecs.ch";
+const currentYear = new Date().getFullYear();
 ---
 
-<footer class="footer bg-base-200 text-base-content p-10">
-  <nav>
-    <h6 class="footer-title">Company</h6>
-    <a href={`${domain}/news`} class="link link-hover">News</a>
-    <a href={`${domain}/about`} class="link link-hover">About</a>
-    <a href={`/contact`} class="link link-hover">Contact</a>
-  </nav>
-  <nav>
-    <h6 class="footer-title">Community</h6>
-    <a href={`${domain}/sponsor`} class="link link-hover">Sponsor</a>
-    <a href={`/socials`} class="link link-hover">Socials</a>
-    <a href={`${domain}/team`} class="link link-hover">Team</a>
-  </nav>
-  <nav>
-    <h6 class="footer-title">Legal</h6>
-    <a href={`/imprint`} class="link link-hover">Imprint</a>
-    <a href={`/terms`} class="link link-hover">Terms of Use</a>
-    <a href={`/privacy`} class="link link-hover">Privacy Policy</a>
-    <a href={`/cookies`} class="link link-hover">Cookie Policy</a>
-  </nav>
-</footer>
-<footer
-  class="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4"
->
-  <aside class="grid-flow-col items-center">
-    <p>
-      Aspecs
-      <br />
-      Copyright © {year}. All rights reserved.
-    </p>
-  </aside>
-  <nav class="md:place-self-center md:justify-self-end">
-    <div class="grid grid-flow-col gap-4">
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/aspecsgaming/">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 448 512"
-          class="fill-current"
-          ><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path
-            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-          ></path>
-        </svg>
-      </a>
-
-      <!-- ItchIO -->
-      <a href="https://aspecsgaming.itch.io">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 512 512"
-          class="fill-current"
-        >
-          <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path
-            d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z"
-          ></path>
-        </svg>
-      </a>
-
-      <!-- YouTube -->
-      <a href="https://www.youtube.com/@aspecsgaming">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current"
-        >
-          <path
-            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
-          ></path>
-        </svg>
-      </a>
+<footer>
+  <div
+    class="items-center text-center 2xl:max-w-7xl lg:px-16 md:px-12 mx-auto px-8 w-xl xl:px-36"
+  >
+    <div
+      class="flex flex-col gap-y-12 items-start justify-between lg:flex-row lg:items-center lg:py-16 pb-6 pt-16"
+    >
+      <div class="lg:text-center lg:mx-auto">
+        <div class="flex items-center text-negroni-500">
+          <div class="lg:text-center lg:mx-auto">
+            <div class="flex items-center text-white">
+              <div class="lg:text-center lg:mx-auto">
+                <p class="font-bold italic lg:mx-auto lg:text-4xl text-2xl">
+                  Aspecs Gaming
+                </p>
+                <div class="flex flex-col items-center">
+                  <nav class="flex gap-x-6 mt-4">
+                    <a
+                      href="https://www.instagram.com/aspecsgaming/"
+                      class="text-negroni-500 h-8 delay-150 hover:text-tomato-500 text-sm transition-colors"
+                    >
+                      Instagram
+                    </a>
+                    <a
+                      href="https://aspecsgaming.itch.io"
+                      class="text-negroni-500 h-8 delay-150 hover:text-tomato-500 text-sm transition-colors"
+                    >
+                      Itch.io
+                    </a>
+                    <a
+                      href="https://www.youtube.com/@aspecsgaming"
+                      class="text-negroni-500 h-8 delay-150 hover:text-tomato-500 text-sm transition-colors"
+                    >
+                      YouTube
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
+    <div
+      class="flex flex-col border-t border-negroni-500/10 lg:mx-auto text-white lg:text-center md:pt-6 pb-12 pt-8"
+    >
+      <p class="md:mt-0 mt-6 text-sm">
+        Copyright © {currentYear}
+        <a class="text-normal" href="https://www.aspecs.ch">Aspecs</a>. All
+        rights reserved.
+      </p>
+      <a href="/imprint" class="text-normal">Imprint</a>
+    </div>
+  </div>
 </footer>
