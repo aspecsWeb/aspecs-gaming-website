@@ -6,7 +6,12 @@ const fetchAssets = async () => {
   try {
     const response = await fetch(`https://itch.io/api/1/${apiKey}/my-games`);
     const text = await response.text();
+    console.log("Response text:", text); // Log the response text for debugging
     const data = JSON.parse(text);
+    data.games.sort(
+      (a, b) =>
+        new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
+    );
     return data.games;
   } catch (error) {
     console.error("Error fetching assets:", error);
