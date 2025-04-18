@@ -1,6 +1,8 @@
 ---
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
+import "../styles/styles.css";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -20,6 +22,7 @@ import "../styles/global.css";
     />
     <meta name="generator" content={Astro.generator} />
     <title>Aspecs Gaming</title>
+    <ClientRouter />
   </head>
 
   <body class="bg-charcoal-500">

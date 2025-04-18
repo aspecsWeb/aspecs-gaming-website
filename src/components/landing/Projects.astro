@@ -5,9 +5,7 @@ if (!apiKey) throw new Error("ItchIO API Key is missing");
 const fetchAssets = async () => {
   try {
     const response = await fetch(`https://itch.io/api/1/${apiKey}/my-games`);
-    const text = await response.text();
-    console.log("Response text:", text); // Log the response text for debugging
-    const data = JSON.parse(text);
+    const data = await response.json();
     data.games.sort(
       (a, b) =>
         new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
@@ -19,15 +17,7 @@ const fetchAssets = async () => {
   }
 };
 
-interface Asset {
-  title: string;
-  cover_url: string;
-  short_text: string;
-  url: string;
-  published: boolean;
-}
-
-const assets: Asset[] = await fetchAssets();
+const assets = await fetchAssets();
 ---
 
 <main>
@@ -46,11 +36,7 @@ const assets: Asset[] = await fetchAssets();
                 <div class="mt-4 flex justify-between px-6">
                   <div>
                     <h3 class="text-sm text-negroni-500">
-                      <a
-                        href={asset.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <a href={`/projects/${asset.id}`}>
                         <span aria-hidden="true" class="absolute inset-0" />
                         {asset.title}
                       </a>
