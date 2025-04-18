@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import sociallinks, { links } from "@/lib/sociallinks.ts";
 ---
 
 <Layout>
@@ -13,36 +14,20 @@ import Layout from "@/layouts/Layout.astro";
       </p>
 
       <ul class="space-y-6 text-lg">
-        <li>
-          <a
-            href="https://www.instagram.com/aspecsgaming/"
-            class="text-negroni-500 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://aspecsgaming.itch.io"
-            class="text-negroni-500 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Itch.io
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/@aspecsgaming"
-            class="text-negroni-500 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            YouTube
-          </a>
-        </li>
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="text-negroni-500 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </main>
