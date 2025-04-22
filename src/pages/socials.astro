@@ -1,6 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import sociallinks, { links } from "@/lib/sociallinks.ts";
+import { links } from "@/lib/sociallinks";
 ---
 
 <Layout>
@@ -13,13 +13,13 @@ import sociallinks, { links } from "@/lib/sociallinks.ts";
         Updates, sneak peeks, and occasional chaos.
       </p>
 
-      <ul class="space-y-6 text-lg">
+      <ul class="space-y-6 gap-6">
         {
           links.map((link) => (
             <li>
               <a
                 href={link.href}
-                class="text-negroni-500 hover:underline"
+                class="block bg-negroni-500 text-white text-lg font-bold py-4 px-6 rounded-full shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl"
                 target="_blank"
                 rel="noopener noreferrer"
               >
